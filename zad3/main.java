@@ -19,7 +19,6 @@ public class Main {
         int ratings = scanner.nextInt();
         int[] rating = new int[ratings];
 
-        double suma=0;
         for (int i=0; i<ratings; i++) {
             System.out.println("Podaj ocenę nr "+(i+1)+": ");
             rating[i] = scanner.nextInt();            
