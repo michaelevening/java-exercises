@@ -22,11 +22,10 @@ public class Main {
         double suma=0;
         for (int i=0; i<ratings; i++) {
             System.out.println("Podaj ocenę nr "+(i+1)+": ");
-            rating[i] = scanner.nextInt();
-            suma=suma+rating[i];
+            rating[i] = scanner.nextInt();            
         }
 
-        double wynik = suma/ratings;
-        System.out.println("Średnia arytmetyczna z podanych ocen wynosi: "+(double)wynik);
+        double wynik = average(rating);
+        System.out.println("Średnia arytmetyczna z podanych ocen wynosi: "+wynik);
     }
 }
